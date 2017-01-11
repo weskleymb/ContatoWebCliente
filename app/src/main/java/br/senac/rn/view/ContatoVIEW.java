@@ -39,9 +39,11 @@ public class ContatoVIEW extends Activity {
                 StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
                 StrictMode.setThreadPolicy(policy);
                 Contato contato = buscar(Integer.parseInt(etId.getText().toString()));
-                tvNome.setText(contato.getNome());
-                tvFone.setText(contato.getFone());
-                tvEmail.setText(contato.getEmail());
+                if (contato != null) {
+                    tvNome.setText(contato.getNome());
+                    tvFone.setText(contato.getFone());
+                    tvEmail.setText(contato.getEmail());
+                }
                 limpar();
             }
         });
