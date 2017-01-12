@@ -62,8 +62,8 @@ public class ContatoVIEW extends Activity {
         }
 
         @Override
-        protected Contato doInBackground(Integer... ints) {
-            return new ContatoDAO().buscarId(ints[0]);
+        protected Contato doInBackground(Integer... id) {
+            return new ContatoDAO().buscarId(id[0]);
         }
 
         @Override
