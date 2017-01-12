@@ -9,7 +9,7 @@ import br.senac.rn.util.AcessoWS;
 
 public class ContatoDAO {
 
-    private final String SERVIDOR = "http://10.1.1.12:8080/contatoweb/resources/contato";
+    private final String SERVIDOR = "http://www2.pm.rn.gov.br:8080/contatoweb/resources/contato";
     private final AcessoWS WEBSERVICE = new AcessoWS();
 
     private final String CADASTRAR = SERVIDOR + "/cadastrar/";
